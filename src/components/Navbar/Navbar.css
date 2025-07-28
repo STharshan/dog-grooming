@@ -1,0 +1,206 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #b9b8b8, #eaeaea);
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+  z-index: 999;
+  display: flex;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  gap: 40px;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  height: 70px;
+  transition: height 0.3s ease;
+  z-index: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.nav-links li a.nav-active {
+  color: #0047ff;
+}
+
+.nav-links li a:hover {
+  color: #0047ff;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #0047ff;
+  white-space: nowrap;
+}
+
+.phone-icon {
+  font-size: 18px;
+}
+
+.nav-links a,
+.desktop-phone a,
+.mobile-phone a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links a:hover,
+.desktop-phone a:hover,
+.mobile-phone a:hover {
+  color: #0a40c9; /* Optional: add a hover effect */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  background-color: linear-gradient(to right, #f8f8f8, #eaeaea);
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  .logo {
+    height: 80px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #b9b8b8, #eaeaea);
+    flex-direction: column;
+    align-items: flex-start; /* ✅ Align left */
+    gap: 15px;
+    padding: 20px 16px;      /* ✅ Space from left edge */
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: left;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #0047ff;
+    margin-top: 10px;
+  }
+
+  .desktop-phone a{
+    text-decoration: none;
+  }
+
+  .desktop-phone {
+    display: none;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+  }
+}
+
+/* Medium screen: Between 768px and 1154px */
+@media (min-width: 769px) and (max-width: 1154px) {
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 65px;
+  }
+
+  .phone {
+    font-size: 0.9rem;
+    white-space: normal;
+    text-align: right;
+  }
+
+  .navbar-container {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .mobile-phone {
+    display: none;
+  }
+
+  .desktop-phone {
+    display: flex;
+  }
+}
+
+/* Large screen: show desktop phone */
+@media (min-width: 1155px) {
+  .mobile-phone {
+    display: none;
+  }
+
+  .desktop-phone {
+    display: flex;
+  }
+}
+
+/* Prevent content from hiding under fixed navbar */
+.main-content {
+  padding-top: 80px;
+}

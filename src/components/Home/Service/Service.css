@@ -1,0 +1,142 @@
+.services-section {
+  padding: 60px 20px;
+  background-color: #e7edf3;
+  text-align: center;
+}
+
+.service-our {
+  color: #3d6bff;
+  padding-bottom: 20px;
+}
+
+.services-header h1 {
+  color: #2155ff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.services-header p {
+  color: #333;
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.services-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 80%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10%;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content .icon1 {
+  font-size: 1.8rem;
+  color: #2155ff;
+  margin-bottom: 12px;
+}
+
+.card-content h3 {
+  color: #2155ff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.card-content a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2155ff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s;
+}
+
+.card-content a:hover {
+  color: #003ccc;
+}
+
+.arrow-icon {
+  color: #2155ff !important;      /* Force blue color */
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-left: 4px;
+}
+
+.card-content a:hover .arrow-icon {
+  transform: translateX(4px);
+  color: #003ccc !important;     /* Darker blue on hover */
+}
+
+.services-btn {
+  margin-top: 50px;
+}
+
+.services-btn button {
+  background-color: #2155ff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.services-btn button:hover {
+  background-color: #003ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+}

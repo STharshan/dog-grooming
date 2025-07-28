@@ -1,0 +1,123 @@
+.hero1-section {
+ background-image: linear-gradient(
+    to bottom,
+    var(--brand-background, #f0f4ff), /* fallback color */
+    #ffe4e6,  /* Tailwind's pink-50 */
+    #dbeafe   /* Tailwind's blue-100 */
+  );
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero1-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Dog Image */
+.hero1-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+}
+
+/* Headings and text */
+.hero1-heading {
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.text-blue {
+  color: #2155ff;
+}
+
+.text-pink {
+  color: #d61b83;
+}
+
+.hero1-subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f0b200;
+  margin: 15px 0;
+}
+
+.text-yellow {
+  color: #f0b200;
+}
+
+.hero1-description {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 620px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+/* Button */
+.hero1-button {
+  background-color: #2155ff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.95rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero1-button:hover {
+  background-color: #003ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero1-heading {
+    font-size: 1.4rem;
+  }
+
+  .hero1-subheading {
+    font-size: 1.2rem;
+  }
+
+  .hero1-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Animation */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+.delay-2 {
+  animation-delay: 0.6s;
+}
+.delay-3 {
+  animation-delay: 0.9s;
+}
+.delay-4 {
+  animation-delay: 1.2s;
+}

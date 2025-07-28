@@ -1,0 +1,77 @@
+/* src/components/WhyChoose.css */
+
+.why-section {
+  background-color: #f5faff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.why-subtitle {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.why-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a4dcc;
+  margin-bottom: 1rem;
+}
+
+.why-description {
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.why-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  max-width: 350px;
+  text-align: center;
+  flex: 1 1 280px;
+  transition: transform 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  font-size: 2.5rem;
+  color: #1a4dcc;
+  margin-bottom: 1rem;
+}
+
+.why-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a4dcc;
+  margin-bottom: 1rem;
+}
+
+.why-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

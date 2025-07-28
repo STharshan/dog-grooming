@@ -1,0 +1,129 @@
+.testimonial-section {
+  background-color: #f7faff;
+  text-align: center;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-header {
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.testimonial-sub {
+  font-size: 0.875rem;
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.testimonial-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin: 0.5rem 0;
+}
+
+.testimonial-description {
+  color: #4b5563;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+  text-align: left;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: #1d4ed8;
+  font-size: 1rem;
+}
+
+.testimonial-role {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.testimonial-controls {
+  display: flex;
+  align-items: center;
+  gap: 17.5rem;
+}
+
+/* Icon Button */
+.icon-btn {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 0;
+}
+
+/* Icon inside the button */
+.arrow-icon {
+  font-size: 1.1rem;
+  color: #1f2937;
+  transition: color 0.3s ease;
+}
+
+/* Change icon color on hover */
+.icon-btn:hover .arrow-icon {
+  color: #2563eb;
+}
+
+.testimonial-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.dot.active {
+  background-color: #1d4ed8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-controls {
+    gap: 5rem;
+  }
+}
+

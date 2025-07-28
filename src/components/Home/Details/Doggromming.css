@@ -1,0 +1,81 @@
+/* DogGroomingPage.css */
+
+.dog-page-container {
+  background: linear-gradient(
+    to bottom,
+    #f0f4ff,  /* light blue top */
+    #ffe4e6,  /* light pink center */
+    #dbeafe   /* blue-100 base */
+  );
+  color: #2d3748;
+  max-width: 100%;
+}
+
+.dog-about {
+  font-size: 0.875rem;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  margin-left: 5%;
+  font-weight: 500px;
+}
+
+.dog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2155ff;
+  margin-bottom: 1.5rem;
+  margin-left: 5%;
+}
+
+@media (min-width: 768px) {
+  .dog-title {
+    font-size: 2.5rem;
+  }
+}
+
+.dog-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-left: 5%;
+  max-width: 90%;
+}
+
+.dog-phone {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.dog-button {
+  margin-top: 2rem;
+  margin-left: 5%;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dog-button:hover {
+  background-color: #1e40af;
+}
+
+/* Optional: Make it look more full-screen visually */
+@media (min-width: 1200px) {
+  .dog-page-container {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 1154px) {
+  .dog-page-container {
+    padding-top: 50px; 
+  }
+  .dog-button{
+    margin-bottom: 80px;
+  }
+}

@@ -1,0 +1,78 @@
+/* DogGroomingCTA.css */
+
+.cta-section {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn.secondary {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #c7d2fe;
+}
+
+.cta-btn.primary {
+  background-color: #1e40af;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-btn.primary:hover {
+  background-color: #1c3ca2;
+}
+
+.icon1 {
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.5rem;
+  }
+
+  .cta-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

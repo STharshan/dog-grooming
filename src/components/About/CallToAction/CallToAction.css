@@ -1,0 +1,50 @@
+/* src/components/CallToAction.css */
+
+.cta-section {
+  background: linear-gradient(to right, #267cf7, #1e5de4);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #e9f1ff;
+  line-height: 1.6;
+}
+
+.cta-button1 {
+  display: inline-block;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e5de4;
+  background: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #f0f8ff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cta-heading {
+    font-size: 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+}
