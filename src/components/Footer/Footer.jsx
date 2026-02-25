@@ -14,16 +14,17 @@ const Footer = () => {
 
           <p>
             <a
-              href="https://www.google.com/maps?q=Unit+6+The+Coplow+Farm+Coplow+Ln,+Billesdon,+Leicester+LE7+9DQ"
+              href="https://www.google.com/maps/search/?api=1&query=Hope+Farm+Cottage+Main+Street+Hungarton+Leicestershire+LE7+9JR"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
             >
               <FiMapPin />
-              Unit 6 Coplow Lodge Farm,<br />
-              Coplow Lane, <br />
-              Billesdon,<br />
-              LE7 9DQ
+              Hope Farm Cottage,<br />
+              Main Street, <br />
+              Hungarton,<br />
+              Leicestershire,<br />
+              LE7 9JR
             </a>
 
           </p>
