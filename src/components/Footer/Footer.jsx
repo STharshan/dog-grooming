@@ -14,7 +14,7 @@ const Footer = () => {
 
           <p>
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Hope+Farm+Cottage+Main+Street+Hungarton+Leicestershire+LE7+9JR"
+              href="https://maps.app.goo.gl/avvj2UQRUx25Jd7A7"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
